@@ -43,7 +43,7 @@ body {
     background: #130f32;
     padding: 15px;
     border-radius: 12px;
-    width: 90%;
+    width: 85%;
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
@@ -122,6 +122,168 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.6s ease forwards;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+/* MODAL CONTENT */
+.modal-content {
+    background: #130f32;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    color: white;
+    animation: fadeUp 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* PREVIEW ITEMS */
+.preview-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.preview-item:last-child {
+    border-bottom: none;
+}
+
+/* CLICKABLE EFFECT */
+.clickable {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.clickable:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* PREVIEW BOX STYLE */
+.preview-box {
+    background: #0f0b28;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.preview-title {
+    color: #d4af37;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.preview-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+}
+
+.badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+.best {
+    background: gold;
+    color: black;
+}
+
+.new {
+    background: #7df9ff;
+    color: black;
+}
+
+/* PREVIEW BUTTON */
+.preview-btn {
+    margin-top: 12px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: #1f1a4d;
+    border: 1px solid #4155a5;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.preview-btn:hover {
+    background: #4155a5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* INTERACTIVE CALCULATOR */
+.calc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.controls {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.controls button {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: #4155a5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total-preview {
+    margin-top: 10px;
+    text-align: right;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* HAPPY HOUR PREVIEW */
+.highlight-preview {
+    background: linear-gradient(135deg, #d4af37, #f5d97a);
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+}
+
+.highlight-preview span {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 @keyframes fadeUp {
