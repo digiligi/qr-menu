@@ -8,73 +8,95 @@
 </head>
 <body>
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="images/logo.png" alt="Logo">
+<!-- LOGO -->
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<!-- TITLE -->
+<h1 class="title">Digitalni QR meniji za kafiće</h1>
+
+<!-- DESCRIPTION -->
+<p class="description">
+    Bez štampe • Brze izmjene <br>
+    Moderan izgled koji vaši gosti vole
+</p>
+
+<!-- BASIC -->
+<div class="menu-section">
+    <h2 class="basic">Basic 80 KM</h2>
+
+    <div class="item">✔ Jednostavan i čist dizajn</div>
+    <div class="item">✔ QR kod za goste</div>
+    <div class="item">✔ Prilagođene boje i tema lokala</div>
+    <div class="item">✔ Stabilan i uvijek dostupan meni</div>
+
+    <div class="preview-btn" onclick="openModal('basic')">
+        Pogledaj preview →
     </div>
+</div>
 
-    <!-- TITLE -->
-    <h1 class="title">Digitalni QR meniji za kafiće</h1>
+<!-- STANDARD -->
+<div class="menu-section">
+    <h2 class="standard">Standard 120 KM</h2>
 
-    <!-- DESCRIPTION -->
-    <p class="description">
-        Bez štampe • Brze izmjene <br>
-        Moderan izgled koji vaši gosti vole
-    </p>
+    <div class="item">✔ Sve iz Basic paketa</div>
+    <div class="item">✔ Interaktivni meni (kalkulator)</div>
+    <div class="item">✔ Animacije i moderniji izgled</div>
+    <div class="item">✔ Istaknuta ponuda (happy hour)</div>
 
-    <!-- BASIC -->
-    <div class="menu-section">
-        <h2 class="basic">Basic (80 KM)</h2>
-
-        <div class="item">✔ Jednostavan i čist dizajn</div>
-        <div class="item">✔ QR kod za goste</div>
-        <div class="item">✔ Prilagođene boje i tema lokala</div>
-        <div class="item">✔ Stabilan i uvijek dostupan meni</div>
+    <div class="preview-btn" onclick="openModal('standard')">
+        Pogledaj preview →
     </div>
+</div>
 
-    <!-- STANDARD -->
-    <div class="menu-section">
-        <h2 class="standard">Standard (120 KM)</h2>
+<!-- PREMIUM -->
+<div class="menu-section">
+    <h2 class="premium">Premium 180 KM</h2>
 
-        <div class="item">✔ Sve iz Basic paketa</div>
-        <div class="item">✔ Interaktivni meni (kalkulator cijene)</div>
-        <div class="item">✔ Animacije i moderniji izgled</div>
-        <div class="item">✔ Istaknuta ponuda (npr. happy hour)</div>
-        <div class="item">✔ Bolja struktura za lakše snalaženje</div>
+    <div class="item">✔ Sve iz Standard paketa</div>
+    <div class="item">✔ Klik na proizvod (slika + opis)</div>
+    <div class="item">✔ Isticanje najprodavanijih</div>
+    <div class="item">✔ Meni na više jezika</div>
+
+    <div class="preview-btn" onclick="openModal('premium')">
+        Pogledaj preview →
     </div>
+</div>
 
-    <!-- PREMIUM -->
-    <div class="menu-section">
-        <h2 class="premium">Premium (180 KM)</h2>
+<!-- ODRŽAVANJE -->
+<div class="menu-section">
+    <h2 class="maintenance">Održavanje 120 KM / godišnje</h2>
 
-        <div class="item">✔ Sve iz Standard paketa</div>
-        <div class="item">✔ Klik na proizvod (slika + opis)</div>
-        <div class="item">✔ Isticanje najprodavanijih proizvoda</div>
-        <div class="item">✔ Meni na više jezika (do 3)</div>
-        <div class="item">✔ Prioritetna podrška i brze izmjene</div>
+    <div class="item">✔ Ažuriranje cijena i proizvoda</div>
+    <div class="item">✔ Dodavanje novih stavki</div>
+    <div class="item">✔ Tehnička podrška</div>
+    <div class="item">✔ Meni uvijek funkcionalan</div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+    <p>Želite moderan meni bez štampe?</p>
+    <p class="cta-sub">Javite se i dobijte svoj digitalni meni već danas.</p>
+
+    <div class="contact">
+        📞 +387 62 432 556 <br>
+        📸 Instagram: @digilibih <br>
+        ✉️ digilibih@gmail.com
     </div>
+</div>
 
-    <!-- ODRZAVANJE -->
-    <div class="menu-section">
-        <h2 class="maintenance">Održavanje (120 KM / godišnje)</h2>
-
-        <div class="item">✔ Ažuriranje cijena i proizvoda</div>
-        <div class="item">✔ Dodavanje novih stavki</div>
-        <div class="item">✔ Tehnička podrška</div>
-        <div class="item">✔ Meni uvijek funkcionalan</div>
+<!-- MODAL -->
+<div id="previewModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
     </div>
+</div>
 
-    <!-- CTA -->
-    <div class="cta">
-        <p>Želite moderan meni bez štampe?</p>
-        <p class="cta-sub">Javite se i dobijte svoj digitalni meni već danas.</p>
-
-        <div class="contact">
-            📞 +387 62 432 556 <br>
-            📸 Instagram: @digilibih <br>
-            ✉️ digilibih@gmail.com
-        </div>
-    </div>
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
