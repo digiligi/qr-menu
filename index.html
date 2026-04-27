@@ -22,56 +22,92 @@
     Moderan izgled koji vaši gosti vole
 </p>
 
-<!-- BASIC -->
-<div class="menu-section">
-    <h2 class="basic">Basic 80 KM</h2>
+<!-- PAKETI -->
+<div class="pricing-container">
 
-    <div class="item">✔ Jednostavan i čist dizajn</div>
-    <div class="item">✔ QR kod za goste</div>
-    <div class="item">✔ Prilagođene boje i tema lokala</div>
-    <div class="item">✔ Stabilan i uvijek dostupan meni</div>
+    <div class="menu-section">
+        <div class="package-name basic">Basic</div>
+        <div class="price">80 KM</div>
 
-    <div class="preview-btn" onclick="openModal('basic')">
-        Pogledaj preview →
+        <div class="item">✔ Jednostavan i čist dizajn</div>
+        <div class="item">✔ QR kod za goste</div>
+        <div class="item">✔ Prilagođene boje i tema lokala</div>
+        <div class="item">✔ Stabilan i uvijek dostupan meni</div>
+
+        <div class="preview-btn" onclick="openModal('basic')">
+            Pogledaj preview →
+        </div>
     </div>
+
+    <div class="menu-section">
+        <div class="package-name standard">Standard</div>
+        <div class="price">120 KM</div>
+        <div class="badge-popular">Najpopularnije</div>
+
+        <div class="item">✔ Sve iz Basic paketa</div>
+        <div class="item">✔ Interaktivni meni (kalkulator)</div>
+        <div class="item">✔ Animacije i moderniji izgled</div>
+        <div class="item">✔ Istaknuta ponuda (happy hour)</div>
+
+        <div class="preview-btn" onclick="openModal('standard')">
+            Pogledaj preview →
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="package-name premium">Premium</div>
+        <div class="price">180 KM</div>
+
+        <div class="item">✔ Sve iz Standard paketa</div>
+        <div class="item">✔ Klik na proizvod (slika + opis)</div>
+        <div class="item">✔ Isticanje najprodavanijih</div>
+        <div class="item">✔ Meni na više jezika</div>
+
+        <div class="preview-btn" onclick="openModal('premium')">
+            Pogledaj preview →
+        </div>
+    </div>
+
 </div>
 
-<!-- STANDARD -->
-<div class="menu-section">
-    <h2 class="standard">Standard 120 KM</h2>
+<!-- SCROLL -->
+</div> <!-- zatvara pricing-container -->
 
-    <div class="item">✔ Sve iz Basic paketa</div>
-    <div class="item">✔ Interaktivni meni (kalkulator)</div>
-    <div class="item">✔ Animacije i moderniji izgled</div>
-    <div class="item">✔ Istaknuta ponuda (happy hour)</div>
+<div class="scroll-banner">
+    <div class="scroll-track">
+        <span> Bez štampe</span>
+        <span> Brze izmjene u sekundi</span>
+        <span> Moderan izgled</span>
+        <span> Više narudžbi</span>
+        <span> Savršeno za turiste</span>
+        <span> Meni na više jezika</span>
+        <span> Uvijek dostupan 24/7</span>
 
-    <div class="preview-btn" onclick="openModal('standard')">
-        Pogledaj preview →
-    </div>
-</div>
-
-<!-- PREMIUM -->
-<div class="menu-section">
-    <h2 class="premium">Premium 180 KM</h2>
-
-    <div class="item">✔ Sve iz Standard paketa</div>
-    <div class="item">✔ Klik na proizvod (slika + opis)</div>
-    <div class="item">✔ Isticanje najprodavanijih</div>
-    <div class="item">✔ Meni na više jezika</div>
-
-    <div class="preview-btn" onclick="openModal('premium')">
-        Pogledaj preview →
+        <!-- DUPLICIRANO radi seamless efekta -->
+        <span> Bez štampe</span>
+        <span> Brze izmjene u sekundi</span>
+        <span> Moderan izgled</span>
+        <span> Više narudžbi</span>
+        <span> Savršeno za turiste</span>
+        <span> Meni na više jezika</span>
+        <span> Uvijek dostupan 24/7</span>
     </div>
 </div>
 
 <!-- ODRŽAVANJE -->
-<div class="menu-section">
-    <h2 class="maintenance">Održavanje 120 KM / godišnje</h2>
+<div class="maintenance-box">
+    <h2>Održavanje</h2>
 
-    <div class="item">✔ Ažuriranje cijena i proizvoda</div>
-    <div class="item">✔ Dodavanje novih stavki</div>
-    <div class="item">✔ Tehnička podrška</div>
-    <div class="item">✔ Meni uvijek funkcionalan</div>
+    <div class="maintenance-price">
+        120 KM <span>/ godišnje</span>
+    </div>
+
+    <div class="maintenance-features">
+        <div>✔ Ažuriranje cijena i proizvoda</div>
+        <div>✔ Dodavanje novih stavki</div>
+        <div>✔ Tehnička podrška</div>
+        <div>✔ Meni uvijek online</div>
+    </div>
 </div>
 
 <!-- CTA -->
@@ -86,16 +122,6 @@
     </div>
 </div>
 
-<!-- MODAL -->
-<div id="previewModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2 id="modalTitle"></h2>
-        <div id="modalBody"></div>
-    </div>
-</div>
-
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
