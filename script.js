@@ -92,6 +92,8 @@ function openModal(type) {
     }
 }
 
+animateScroll();
+
 function changeQty(button, change) {
     let qtySpan = button.parentElement.querySelector(".qty");
     let qty = parseInt(qtySpan.innerText);
@@ -128,3 +130,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
