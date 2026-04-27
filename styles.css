@@ -73,10 +73,47 @@ body {
     text-shadow: 0 0 8px rgba(125,249,255,0.6);
 }
 
-/* 🔧 MAINTENANCE */
-.maintenance {
+/* MAINTENANCE BOX */
+.maintenance-box {
+    margin: 40px auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 500px;
+
+    background: linear-gradient(135deg, #1a1550, #130f32);
+    border: 1px solid #4155a5;
+    border-radius: 15px;
+
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.maintenance-box h2 {
     color: #9f9fd6;
-    border-color: #4155a5;
+    margin-bottom: 10px;
+}
+
+/* BIG PRICE */
+.maintenance-price {
+    font-size: 28px;
+    font-weight: 600;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.maintenance-price span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* FEATURES */
+.maintenance-features div {
+    padding: 6px 0;
+    border-bottom: 1px solid #222;
+}
+
+.maintenance-features div:last-child {
+    border-bottom: none;
 }
 
 /* ITEMS */
@@ -284,6 +321,109 @@ body {
     display: block;
     font-size: 18px;
     margin-top: 5px;
+}
+
+/* PRICING GRID */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* CARDS */
+.menu-section {
+    flex: 1 1 280px;
+    max-width: 320px;
+    text-align: center;
+}
+
+/* PACKAGE NAME (small) */
+.package-name {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* BIG PRICE */
+.price {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* COLORS */
+.package-name.basic { color: #c0c0c0; }
+.package-name.standard { color: #d4af37; }
+.package-name.premium { color: #7df9ff; }
+
+/* MAKE PRICE MATCH COLOR */
+.menu-section:nth-child(1) .price { color: #c0c0c0; }
+.menu-section:nth-child(2) .price { color: #d4af37; }
+.menu-section:nth-child(3) .price { color: #7df9ff; }
+
+/* HOVER = MORE CLICKABLE */
+.menu-section {
+    transition: 0.25s;
+}
+
+.menu-section:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.badge-popular {
+    background: #d4af37;
+    color: black;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* SCROLLING BENEFITS BANNER */
+.scroll-banner {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(90deg, #130f32, #1a1550);
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    margin: 30px 0;
+    padding: 12px 0;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollLeft 18s linear infinite;
+}
+
+.scroll-track span {
+    font-size: 14px;
+    color: #ffffff;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+/* ANIMATION */
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @keyframes fadeUp {
